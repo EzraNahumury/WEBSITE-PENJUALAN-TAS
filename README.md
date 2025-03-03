@@ -34,3 +34,6 @@ PEMBAYARAN
 
 
 NOTIFIKASI TRANSAKSI
+<p align="center">
+  <img src="https://github.com/EzraNahumury/WEBSITE-PENJUALAN-TAS/blob/main/NOTIFIKASI.png">
+</p>
