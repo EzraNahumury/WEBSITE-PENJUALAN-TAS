@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Login & Signup</title>
+</head>
+<body>
+<div class="container" id="container">
+    <div class="form-container sign-up-container" id="sign-up-container">
+        <form action="Login.html" method="POST">
+            <h1>Create Account</h1>
+            <span>or use your email for registration</span><br><b></b>
+            <input type="text" placeholder="Name" name="NamaLengkap" required />
+            <input type="text" placeholder="Username" name="Username" required />
+            <input type="password" placeholder="Password" name="Password" required />
+            <input type="password" placeholder="Confirm Password" name="ConfirmPassword" required /><br>
+            <button type="submit" name="signup">Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container" id="sign-in-container">
+        <form id="loginForm" action="#" method="POST">
+            <h1>LOGIN</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input type="text" id="loginUsername" placeholder="Username" name="Username" required />
+            <input type="password" id="loginPassword" placeholder="Password" name="Password" required />
+            <a href="#">Forgot your password?</a>
+            <button type="button" id="loginButton" name="login">LOGIN</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Fungsi untuk menangani login
+    document.getElementById('loginButton').addEventListener('click', function () {
+        // Ambil nilai input username dan password
+        const username = document.getElementById('loginUsername').value;
+        const password = document.getElementById('loginPassword').value;
+
+        // Contoh validasi sederhana
+        if (username === "user" && password === "user") {
+            // Jika login berhasil, arahkan ke Home.html
+            window.location.href = "Home.html";
+        } else {
+            // Jika login gagal, tampilkan pesan error
+            alert("Username atau password salah!");
+        }
+    });
+</script>
+
+<script src="login.js"></script>
+</body>
+</html>
