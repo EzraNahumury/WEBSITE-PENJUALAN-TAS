@@ -1,5 +1,15 @@
 # WEBSITE-PENJUALAN-TAS
 
+REGISTER
+<p align="center">
+  <img src="https://github.com/EzraNahumury/WEBSITE-PENJUALAN-TAS/blob/main/REGISTER.png">
+</p>
+
+LOGIN
+<p align="center">
+  <img src="https://github.com/EzraNahumury/WEBSITE-PENJUALAN-TAS/blob/main/LOGINN.png">
+</p>
+
 HOME 
 <p align="center">
   <img src="https://github.com/EzraNahumury/WEBSITE-PENJUALAN-TAS/blob/main/HOME-1.png">
